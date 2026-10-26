@@ -28,7 +28,13 @@ const products = [
       ["IMG_20260630_132136.jpg", "Conjunto de cestas de distintos tamaños"],
       ["IMG_20260630_132145.jpg", "Cestas redondas y rectangulares de fibras naturales"],
       ["IMG_20260630_132238.jpg", "Cesta cuadrada para guardar pequeños objetos"],
-      ["IMG_20260630_132247.jpg", "Detalle de una cesta rectangular tejida"]
+      ["IMG_20260630_132247.jpg", "Detalle de una cesta rectangular tejida"],
+      ["IMG_20261026_102747.jpg", "Jarro artesanal de fibras naturales y bandejas"],
+      ["IMG_20261026_102815.jpg", "Jarroncito para adorno en aseos"],
+      ["IMG-20260507-WA0002.jpg", "Cestas y piezas decorativas artesanales en una estantería"],
+      ["IMG_20261026_102637.jpg", "Cestas y piezas decorativas artesanales en una estantería"],
+      ["IMG_20261026_102714.jpg", "Cestas y piezas decorativas artesanales en una estantería"],
+      ["IMG_20261026_102654.jpg", "Cestas y piezas decorativas artesanales en una estantería"]
     ]
   },
   {
@@ -45,7 +51,9 @@ const products = [
       ["IMG-20260522-WA0002.jpg", "Pieza decorativa circular hecha con fibras naturales"],
       ["IMG-20260522-WA0009.jpg", "Detalle circular artesanal presentado en una estantería"],
       ["IMG_20260630_132303.jpg", "Escultura circular de fibras naturales"],
-      ["IMG_20260630_132333.jpg", "Composición artesanal de fibras y flores"]
+      ["IMG_20260630_132333.jpg", "Composición artesanal de fibras y flores"],
+      ["IMG_20261026_102839.jpg", "Pequeños detalles decorativos artesanales"],
+      ["IMG_20261026_102734.jpg", "Detalle de piezas artesanales expuestas en el hogar"]
     ]
   },
   {
