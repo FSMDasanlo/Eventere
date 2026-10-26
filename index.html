@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f3ea">
+    <meta name="description" content="Eventere: artesanía hecha a mano para celebrar, decorar y regalar. Descubre las creaciones de Teresa.">
+    <title>Eventere — Detalles que hacen especiales tus momentos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="Eventere, inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 39S7 29 7 17.5C7 11.7 14.6 8.2 20 14l4 4 4-4c5.4-5.8 13-2.3 13 3.5C41 29 24 39 24 39Z" />
+              <path d="M15 24c4-1 6-4 7-8m11 8c-4-1-6-4-7-8M17 29c3-.5 5-2.5 7-5m7 5c-3-.5-5-2.5-7-5m0 0v15" />
+            </svg>
+          </span>
+          <span class="brand-name">eventere<span>.</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle-label">Menú</span>
+          <span class="menu-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+          <a href="#coleccion">Colección</a>
+          <a href="#taller">El taller</a>
+          <a href="#contacto" class="nav-cta">Hablemos <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero section-wrap" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Artesanía hecha con cariño</p>
+          <h1 id="hero-title">Detalles únicos para <em>momentos inolvidables.</em></h1>
+          <p class="hero-intro">Creaciones artesanales de Teresa para celebrar, decorar y regalar. Cada pieza se hace con calma, cuidando lo que la hace especial.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#coleccion">Descubrir la colección <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#taller">Conoce el taller <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-rule"></span>
+            <span>Hecho a mano, pieza a pieza</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="img/alfombra_1_arco.png" alt="Alfombras artesanales de fibras naturales en un camino de ceremonia al aire libre" fetchpriority="high">
+          </div>
+          <div class="hero-stamp" aria-label="Hecho a mano con cariño">
+            <span>HECHO A MANO</span>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 39S7 29 7 17.5C7 11.7 14.6 8.2 20 14l4 4 4-4c5.4-5.8 13-2.3 13 3.5C41 29 24 39 24 39Z" /></svg>
+            <span>CON CARIÑO</span>
+          </div>
+          <span class="hero-caption">Pequeños detalles, grandes recuerdos</span>
+        </div>
+      </section>
+
+      <section class="values-band" aria-label="Lo que inspira Eventere">
+        <div class="values-inner">
+          <p><span class="value-icon" aria-hidden="true">✳</span> Hecho a mano</p>
+          <span class="values-divider" aria-hidden="true"></span>
+          <p><span class="value-icon" aria-hidden="true">✳</span> Inspirado en la naturaleza</p>
+          <span class="values-divider" aria-hidden="true"></span>
+          <p><span class="value-icon" aria-hidden="true">✳</span> Creado con cariño</p>
+        </div>
+      </section>
+
+      <section class="collection section-wrap" id="coleccion" aria-labelledby="collection-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> El catálogo de Teresa</p>
+            <h2 id="collection-title">Piezas con su propia <em>historia.</em></h2>
+          </div>
+          <p class="section-intro">Una selección de creaciones artesanales para vestir tus celebraciones y dar calidez a cada rincón.</p>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filtrar piezas por categoría">
+          <button class="filter-button is-active" type="button" data-filter="todas" aria-pressed="true">Todas las piezas</button>
+          <button class="filter-button" type="button" data-filter="celebraciones" aria-pressed="false">Celebraciones</button>
+          <button class="filter-button" type="button" data-filter="hogar" aria-pressed="false">Hogar y decoración</button>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        <p class="catalog-note">Cada creación es especial y puede variar en forma o acabado. Escríbenos para consultar disponibilidad y opciones de personalización.</p>
+      </section>
+
+      <section class="atelier" id="taller" aria-labelledby="atelier-title">
+        <div class="atelier-images" aria-label="Teresa trabajando en sus creaciones">
+          <figure class="atelier-photo atelier-photo-main">
+            <img src="img/IMG_20260728_183547.jpg" alt="Teresa trabajando cuidadosamente en una pieza artesanal" loading="lazy">
+          </figure>
+          <figure class="atelier-photo atelier-photo-detail">
+            <img src="img/IMG_20260728_124043.jpg" alt="Detalle del proceso de creación de una alfombra artesanal" loading="lazy">
+          </figure>
+          <span class="atelier-photo-note">Un proceso hecho con calma</span>
+        </div>
+        <div class="atelier-copy">
+          <p class="eyebrow eyebrow-light"><span></span> Detrás de cada pieza</p>
+          <h2 id="atelier-title">Del taller de Teresa, <em>a un lugar especial.</em></h2>
+          <p>Cada creación empieza con una idea y va tomando forma poco a poco. En el taller, Teresa combina materiales, texturas y paciencia para dar vida a piezas únicas.</p>
+          <p>Porque lo hecho a mano no solo decora: también guarda el tiempo, el cuidado y el cariño de quien lo creó.</p>
+          <a class="button button-light" href="#contacto">Cuéntanos tu idea <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="process-gallery section-wrap" aria-labelledby="process-title">
+        <div class="process-heading">
+          <div>
+            <p class="eyebrow"><span></span> Un vistazo al proceso</p>
+            <h2 id="process-title">Las ideas también <em>se trabajan.</em></h2>
+          </div>
+          <p class="section-intro">De los primeros trazos a las últimas puntadas: así va tomando forma cada creación.</p>
+        </div>
+        <div class="process-grid">
+          <figure><img src="img/IMG_20260504_092347.jpg" alt="Materiales y una pieza artesanal durante su elaboración" loading="lazy"></figure>
+          <figure><img src="img/IMG_20260728_124034.jpg" alt="Teresa preparando una pieza de fibras naturales en su taller" loading="lazy"></figure>
+          <figure><img src="img/IMG_20260728_124041.jpg" alt="Detalle de materiales naturales listos para trabajar" loading="lazy"></figure>
+          <figure><img src="img/IMG_20260728_124046.jpg" alt="Teresa dando forma a una de sus creaciones" loading="lazy"></figure>
+        </div>
+      </section>
+
+      <section class="contact section-wrap" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-flower" aria-hidden="true">✳</div>
+        <p class="eyebrow"><span></span> ¿Tienes algo en mente?</p>
+        <h2 id="contact-title">Hagamos especial <em>tu momento.</em></h2>
+        <p class="contact-copy">Cuéntanos qué estás buscando. Teresa te ayudará a encontrar una pieza o a imaginar un detalle hecho para ti.</p>
+        <a class="button button-dark" href="https://wa.me/34618169377?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20las%20creaciones%20de%20Eventere." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp <span aria-hidden="true">↗</span></a>
+        <p class="contact-note">Sin precios estándar: cada encargo se habla directamente y con cariño.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <a class="brand brand-footer" href="#inicio" aria-label="Eventere, volver al inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 39S7 29 7 17.5C7 11.7 14.6 8.2 20 14l4 4 4-4c5.4-5.8 13-2.3 13 3.5C41 29 24 39 24 39Z" />
+              <path d="M15 24c4-1 6-4 7-8m11 8c-4-1-6-4-7-8M17 29c3-.5 5-2.5 7-5m7 5c-3-.5-5-2.5-7-5m0 0v15" />
+            </svg>
+          </span>
+          <span class="brand-name">eventere<span>.</span></span>
+        </a>
+        <p>Detalles que hacen especiales tus momentos.</p>
+        <a class="footer-top" href="#inicio">Volver arriba ↑</a>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="current-year"></span> Eventere · Artesanía de Teresa</span>
+        <span>Hecho a mano, con cariño.</span>
+      </div>
+    </footer>
+
+    <dialog class="gallery-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-topbar">
+        <div>
+          <p class="eyebrow">Galería de piezas</p>
+          <h2 id="dialog-title"></h2>
+        </div>
+        <button class="dialog-close" type="button" aria-label="Cerrar galería">×</button>
+      </div>
+      <div class="dialog-image-wrap">
+        <button class="gallery-arrow gallery-prev" type="button" aria-label="Imagen anterior">‹</button>
+        <img class="dialog-image" src="" alt="">
+        <button class="gallery-arrow gallery-next" type="button" aria-label="Imagen siguiente">›</button>
+      </div>
+      <div class="dialog-footer">
+        <p class="gallery-count" aria-live="polite"></p>
+        <a class="button button-dark dialog-interest" href="#" target="_blank" rel="noopener noreferrer">Preguntar por esta pieza <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="gallery-thumbnails" aria-label="Seleccionar imagen"></div>
+    </dialog>
+  </body>
+</html>
